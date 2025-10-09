@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+body {
+    background-color: #000000;
+    text-align: center;
+}
+
+h1 {
+    font-family: "Jersey 10", sans-serif;
+    color: #ffffff;
+    font-size: 100px;
+}

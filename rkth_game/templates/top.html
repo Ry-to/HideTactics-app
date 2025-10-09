@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'rkth_game/CSS/top.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-</body>
+    <h1>HideTactics</h1>
+    <audio src="{% static 'rkth_game/sounds/menu.song.wav' %}" controls loop></audio>
+
 </html>

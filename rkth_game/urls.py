@@ -1,5 +1,6 @@
 from django.urls import path
+from . import views
 
 urlpatterns = [
-    # ルートがまだ無ければ空でOK
+    path("top/", views.top, name="top"),
 ]
