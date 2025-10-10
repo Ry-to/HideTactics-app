@@ -11,6 +11,28 @@
 
 <body>
     <h1>HideTactics</h1>
-    <audio src="{% static 'rkth_game/sounds/menu.song.wav' %}" controls loop></audio>
+    <button id="music-btn" class="music-button">music play</button>
+
+    <audio id="bgm" src="{% static 'rkth_game/sounds/menu.song.wav' %}" loop></audio>
+
+    <script>
+        const btn = document.getElementById('music-btn');
+        const bgm = document.getElementById('bgm');
+        let isPlaying = false;
+
+        btn.addEventListener('click', () => {
+            if (!isPlaying) {
+                bgm.play();
+                isPlaying = true;
+                btn.textContent = 'stop';
+                btn.classList.add('playing');
+            } else {
+                bgm.pause();
+                isPlaying = false;
+                btn.textContent = 'music play';
+                btn.classList.remove('playing');
+            }
+        });
+    </script>
 
 </html>
