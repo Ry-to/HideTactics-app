@@ -3,38 +3,6 @@
 body {
     background-color: #000000;
     text-align: center;
-}
-
-h1 {
     font-family: "Jersey 10", sans-serif;
-    color: #ffffff;
-    font-size: 100px;
-}
-
-.music-button {
-    background: black;
-    /* 白背景 */
-    color: #ffffff;
-    /* 黒文字 */
-    border: 3px solid #ffffff;
-    /* 黒い線で囲む */
-    font-size: 1.2em;
-    font-weight: bold;
-    padding: 15px 40px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-    box-shadow: 2px 2px 0 #000;
-    font-family: "Jersey 10", sans-serif;
-    font-size: 40px;
-}
-
-.music-button:hover {
-    transform: translate(1px, 1px);
-    box-shadow: 1px 1px 0 #000;
-}
-
-.music-button.playing {
-    background: #ddd;
-    /* 再生中は薄いグレーに */
-    color: #000;
+    overflow: hidden;
 }

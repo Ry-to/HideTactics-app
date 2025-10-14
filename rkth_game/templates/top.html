@@ -1,38 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 
 <head>
     {% load static %}
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'rkth_game/CSS/top.css' %}">
+    <link rel="stylesheet" href="{% static 'rkth_game/css/top.css' %}">
+    <link rel="stylesheet" href="{% static 'rtkh_game/css/reset.css' %}">
     <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <h1>HideTactics</h1>
-    <button id="music-btn" class="music-button">music play</button>
-
     <audio id="bgm" src="{% static 'rkth_game/sounds/Home-song.mp3' %}" loop></audio>
+    <div class="title-wrap">
+        <h1 class="title2">RK</h1>
+        <h1 class="title">HideTactics</h1>
+    </div>
+    <img src="{% static 'rkth_game/images/darkCard.png'%}" alt="darkCard" class="darkCard">
 
-    <script>
-        const btn = document.getElementById('music-btn');
-        const bgm = document.getElementById('bgm');
-        let isPlaying = false;
-
-        btn.addEventListener('click', () => {
-            if (!isPlaying) {
-                bgm.play();
-                isPlaying = true;
-                btn.textContent = 'stop';
-                btn.classList.add('playing');
-            } else {
-                bgm.pause();
-                isPlaying = false;
-                btn.textContent = 'music play';
-                btn.classList.remove('playing');
-            }
-        });
-    </script>
+    <button type="button" class="startBtn">Start</button>
+    <div class="select">
+        <ul>
+            <li><button type="button">battle</button></li>
+            <li><button type="button">shop</button></li>
+            <li><button type="button">option</button></li>
+        </ul>
+    </div>
+    <script src="{% static 'rkth_game/js/top.js'%}"></script>
+</body>
 
 </html>
