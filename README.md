@@ -19,3 +19,8 @@
 ## マイグレーションファイルを元にDBにテーブル実体を作成・更新
 
 `python manage.py migrate`
+
+## コミットと変更の同期ミス時
+
+`git status`
+`git pull --rebase`
