@@ -5,7 +5,6 @@ body {
     font-family: "Jersey 10", sans-serif;
     margin: 0;
     overflow: hidden;
-    margin: 0;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,4 +18,13 @@ body {
 
 h1{
     color: white;
+}
+
+.select button {
+    font-size: 96px;
+    color: white;
+    border: none; /* 枠線を消す */
+    background: none; /* 背景色を消す（必要なら） */
+    cursor: pointer; /* マウスホバーでポインター表示 */
+    font-family: "Jersey 10", sans-serif;
 }
